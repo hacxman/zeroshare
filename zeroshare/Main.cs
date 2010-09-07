@@ -15,7 +15,6 @@ namespace zeroshare
 			
       		while (zs.Running)
       		{
-				//Console.WriteLine ("Zeroshare state: {0}", zs.Running);
 				Thread.Sleep (1000);
       		}
 		}

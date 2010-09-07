@@ -32,7 +32,7 @@ namespace zeroshare
 			service.ReplyDomain = "local.";
 			service.Port = 5566;
 			
-      		pin = "0000";
+      		pin = String.Format ("{0:0000}", new Random ().Next (1000, 9999));
         	Console.WriteLine ("PIN: {0}", pin);
 			
 			// TxtRecords are optional

@@ -9,6 +9,7 @@
     <OutputType>Library</OutputType>
     <AssemblyName>Mono.Zeroconf.Providers.AvahiDBus</AssemblyName>
     <UseParentDirectoryAsNamespace>true</UseParentDirectoryAsNamespace>
+    <RootNamespace>Mono.Zeroconf.Providers.AvahiDBus</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Mono.Zeroconf\Mono.Zeroconf.csproj">
-      <Project>{EF6ED6D1-D201-42ED-B680-5A77641BEB77}</Project>
+      <Project>{5CF88E3A-13DD-4114-BAD9-DA826946516F}</Project>
       <Name>Mono.Zeroconf</Name>
     </ProjectReference>
   </ItemGroup>
