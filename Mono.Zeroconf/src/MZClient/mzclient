@@ -1,0 +1,3 @@
+#!/bin/bash
+mono --debug /usr/local/lib/mono-zeroconf/MZClient.exe "$@"
+

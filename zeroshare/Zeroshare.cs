@@ -10,6 +10,7 @@ namespace zeroshare
 	{
     	private RegisterService service;
     	private bool running = false;
+    	private string pin;
     
 		public bool Running {
 			get {
@@ -17,17 +18,26 @@ namespace zeroshare
 			}
 		}
     
+		public string Pin {
+			get {
+				return this.pin;
+			}
+		}
+
 		public Zeroshare ()
-    	{
+		{
 			service = new RegisterService ();
 			service.Name = "Zeroshare";
 			service.RegType = "_zeroshare._tcp";
 			service.ReplyDomain = "local.";
 			service.Port = 5566;
 			
+      		pin = "0000";
+        	Console.WriteLine ("PIN: {0}", pin);
+			
 			// TxtRecords are optional
 			TxtRecord txt_record = new TxtRecord ();
-			txt_record.Add ("hello", "world");
+			txt_record.Add ("PIN", pin);
 			service.TxtRecord = txt_record;
 			
 			service.Response += HandleServiceResponse;
