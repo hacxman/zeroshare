@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="zeroshare/Zeroshare.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="zeroshare/StdinContentEncoder.cs" ctype="Workbench">
     <Files>
-      <File FileName="zeroshare/Main.cs" Line="18" Column="7" />
-      <File FileName="zeroshare/Zeroshare.cs" Line="35" Column="38" />
-      <File FileName="zeroshare/HelloWorldContentProvider.cs" Line="39" Column="1" />
-      <File FileName="Mono.Zeroconf/src/Mono.Zeroconf/Mono.Zeroconf/RegisterService.cs" Line="47" Column="1" />
+      <File FileName="zeroshare/Main.cs" Line="34" Column="20" />
+      <File FileName="zeroshare/HelloWorldContentEncoder.cs" Line="56" Column="7" />
+      <File FileName="zeroshare/ZeroshareClient.cs" Line="38" Column="8" />
+      <File FileName="zeroshare/StdinContentDecoder.cs" Line="7" Column="39" />
+      <File FileName="zeroshare/ZeroshareBase.cs" Line="20" Column="32" />
+      <File FileName="zeroshare/StdinContentEncoder.cs" Line="45" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

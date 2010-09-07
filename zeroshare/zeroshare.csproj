@@ -20,6 +20,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <Externalconsole>true</Externalconsole>
+    <Commandlineparameters>1337</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
@@ -36,10 +37,16 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="IContentProvider.cs" />
-    <Compile Include="HelloWorldContentProvider.cs" />
-    <Compile Include="ContentProvider.cs" />
-    <Compile Include="Zeroshare.cs" />
+    <Compile Include="IContentEncoder.cs" />
+    <Compile Include="HelloWorldContentEncoder.cs" />
+    <Compile Include="ContentEncoder.cs" />
+    <Compile Include="ZeroshareServer.cs" />
+    <Compile Include="ZeroshareClient.cs" />
+    <Compile Include="ZeroshareBase.cs" />
+    <Compile Include="StdinContentDecoder.cs" />
+    <Compile Include="IContentDecoder.cs" />
+    <Compile Include="ContentDecoder.cs" />
+    <Compile Include="StdinContentEncoder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
