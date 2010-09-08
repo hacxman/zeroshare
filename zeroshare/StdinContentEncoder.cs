@@ -43,7 +43,7 @@ namespace zeroshare
 			{
         		Console.WriteLine("Data: {0}", encoding.GetString(buffer));
 				stream.Write(buffer, 0, buffer.Length);
-			};
+			}
       
       		Console.Error.WriteLine ("Closing socket");
 			sock.Close ();
