@@ -1,0 +1,24 @@
+USAGE
+=====
+
+Server (sender) side:
+
+  $ echo "Hello world" | zeroshare.exe -s
+  PIN: 3905
+  *** Registered name = 'Zeroshare'
+  Waiting for connection on port 0.0.0.0:5566
+  Got connection from 192.168.60.1:55659
+  Data: Hello world
+
+  Closing socket
+  *** Unregistering service
+
+Client (reciever) side:
+
+$ zeroshare.exe 3905
+  Starting service browser...
+  Found Service: Zeroshare
+  Resolved Zeroshare serivce: Zeroshare._zeroshare._tcp.local. - 192.168.60.1:5566 (1 TXT record entries) [PIN: 3905]
+  Found my content source, streaming...
+  Hello world
+  Streaming done
